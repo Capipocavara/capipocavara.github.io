@@ -23,7 +23,10 @@
 			}
 		}
 	},
-	"forwardPorts": [4000],
+	"name": "Capipocavara",
+	"forwardPorts": [4000, 35729],
+	"runArgs": ["-- name", "Capipocavara Devcontainer"],
 	"postCreateCommand": "sh /usr/local/post-create.sh",
+	"postStartCommand": "bundle install && bundle exec jekyll serve --livereload --force_polling",
 	"remoteUser": "root"
 }
