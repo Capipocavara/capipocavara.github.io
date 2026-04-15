@@ -1,37 +1,38 @@
----
----
-{%- assign locale = page.locale | default: layout.locale | default: site.locale %}
-
-<!doctype html>
-{% include copyright.html %}
-<html lang="{{ locale | replace: "_", "-" | default: "en" }}" class="no-js">
-  <head>
-    {% include head.html locale=locale %}
-    {% include head/custom.html %}
-  </head>
-
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
-    {% include_cached skip-links.html locale=locale %}
-    {% include_cached masthead.html locale=locale %}
-
-    <div class="initial-content">
-      {{ content }}
-      {% include after-content.html %}
-    </div>
-
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html locale=locale %}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: "en" }}" class="html" data-theme="{{ site.theme_config.appearance | default: "auto" }}">
+        {%- include head.html -%}
+  <body>
+    {%- if site.theme_config.show_progress_bar and page.layout == "post" -%}
+      {% include progress_bar.html %}
+    {%- endif -%}
+    <main class="page-content" aria-label="Content">
+      <div class="w">
+        {{ content }}
+        {% if site.theme_config.appearance_toggle %}
+          {% include toggle_theme_button.html %}
+        {% endif %}
+        <div class="credits">
+          {%- if site.theme_config.show_copyright == true -%}
+          &copy;&nbsp;{{ "now" | date: "%Y" }}&nbsp;{{site.author}}
+          &nbsp;
+          •
+          &nbsp;
+          {%- endif -%}
+          Theme&nbsp; <a href="https://github.com/abhinavs/moonwalk" target="_blank" rel="noopener noreferrer">Moonwalk</a>
+        </div>
       </div>
-    {% endif %}
+    </main>
 
-    <div id="footer" class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html locale=locale %}
-      </footer>
-    </div>
+    {%- if page.layout == "post" -%}
+      {% include github_alerts.html %}
+    {%- endif -%}
 
-    {% include scripts.html locale=locale %}
+    {%- if site.theme_config.show_code_copy and page.layout == "post" -%}
+      {% include code_copy.html %}
+    {%- endif -%}
+
+    {%- if site.theme_config.show_back_to_top and page.layout == "post" -%}
+      {% include back_to_top.html %}
+    {%- endif -%}
   </body>
 </html>
