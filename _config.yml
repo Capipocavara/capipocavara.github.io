@@ -66,11 +66,11 @@ sass:
   style: :compressed
 
 plugins:
-  - jekyll-feed
+  - jekyll-include-cache
   - jekyll-sitemap
   - jekyll-feed
 
 whitelist:
-  - jekyll-sitemap
   - jekyll-include-cache
+  - jekyll-sitemap
   - jekyll-feed
