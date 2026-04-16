@@ -120,7 +120,7 @@ html, body {
 }
 h1, h2, h3, h4, h5, h6 {
     color: var(--headings);
-    font-family: "Inter", -apple-system, "avenir next", avenir, roboto, noto, ubuntu, "helvetica neue", helvetica, sans-serif;
+    font-family: "Raleway", -apple-system, "avenir next", avenir, roboto, noto, ubuntu, "helvetica neue", helvetica, sans-serif;
 }
 p, strong, b, em, small, li, hr, table, figcaption {
     color: var(--text);
@@ -216,7 +216,7 @@ p code, li code {
   right: 0.5em;
   padding: 0.2em 0.6em;
   font-size: 0.75rem;
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: var(--text-secondary);
   background-color: var(--bg-secondary);
   border: 1px solid var(--border);
@@ -384,7 +384,7 @@ div.highlighter-rouge:hover .code-copy {
   summary {
     cursor: pointer;
     font-weight: 700;
-    font-family: "Inter", sans-serif;
+    font-family: "Raleway", sans-serif;
     color: var(--headings);
     margin-bottom: 0.5em;
   }
