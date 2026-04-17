@@ -13,10 +13,8 @@
         {% endif %}
         <div class="credits">
           {%- if site.theme_config.show_copyright == true -%}
-          &copy;&nbsp;{{ "now" | date: "%Y" }}&nbsp;{{site.author}}
-          &nbsp;
-          •
-          &nbsp;
+          &copy;&nbsp;{{ site.since }}&nbsp; - &nbsp;{{ "now" | date: "%Y" }}&nbsp;{{ site.author }}
+          &nbsp;•&nbsp;
           {%- endif -%}
           Theme&nbsp; <a href="https://github.com/abhinavs/moonwalk" target="_blank" rel="noopener noreferrer">Moonwalk</a>
         </div>

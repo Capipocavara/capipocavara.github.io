@@ -1,0 +1,12 @@
+footer_entries:
+  - title: GitHub
+    icon: fa-brands fa-github
+    url: https://github.com/capipocavara
+
+  - title: Contact
+    icon: fa-solid fa-envelope
+    url: mailto:contact@capipocavara.de
+
+  - title: Feed
+    icon: fa-solid fa-square-rss
+    url: feed.xml

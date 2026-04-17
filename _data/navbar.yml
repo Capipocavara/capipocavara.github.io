@@ -1,0 +1,20 @@
+navbar_entries:
+  - title: Home
+    icon: fa-solid fa-seedling
+    url: /
+
+  - title: Projects
+    icon: fa-solid fa-swatchbook
+    url: projects
+
+  - title: Resources
+    icon: fa-solid fa-box-archive
+    url: resources
+
+  - title: Devlog
+    icon: fa-solid fa-code
+    url: blog
+
+  - title: Swag
+    icon: fa-solid fa-panorama
+    url: swag

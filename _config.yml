@@ -1,23 +1,13 @@
 title: Capipocavara
+since: 2020
 author: Elscherino
-location: Berlin
-email: mailto:contact@capipocavara.de
-email_icon: "fas fa-fw fa-square-envelope"
-github: "https://github.com/capipocavara/"
-github_icon: "fab fa-fw fa-github"
 
 url: https://www.capipocavara.de
 baseurl: ""
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: >-
+  Virtual Reality Development, Projects, Capybaras!
 
 permalink: /:slug
-
-twitter:
-  username: abhinav # update or delete this
-  card: summary_large_image
 
 theme_config:
   appearance: dark
@@ -41,10 +31,9 @@ theme_config:
   show_toc: true # allow per-post table of contents via toc: true front matter
   # options for "home" page
   home:
-    title_projects: Portfolio
-    title_misc_list: Details
-    title_blog: Blog
-    title_old_projects: Old Projects
+    title_projects: Projects
+    title_blog: Devlog
+
 
 # Conversion
 markdown: kramdown
