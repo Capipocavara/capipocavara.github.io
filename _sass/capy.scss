@@ -7,6 +7,7 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
 pre, code {
   font-family: "Fira Code", "JetBrains Mono", "Courier New", monospace;
   font-size: 0.9rem;
@@ -24,10 +25,11 @@ p { margin: 1.25em 0; }
 li { margin: 0.4em 0; }
 
 .w {
-  max-width: 720px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 4em 2em;
 }
+
 @media screen and (max-width: 600px) {
   .w {
     padding: 2em 1.25em;
@@ -41,6 +43,7 @@ table {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
+
 table, th, td {
   border: thin solid var(--text);
   padding: 0.4em;
@@ -68,10 +71,12 @@ img {
   display: block;
   margin: 0 auto;
 }
+
 .page-content img {
   border-radius: 0.5em;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+
 @mixin light-appearance {
   html, body {
       --bg: #FEF5E6;
@@ -86,11 +91,11 @@ img {
       --border: rgba(196, 33, 71, 0.5);
   }
 }
-// -------------- THEME SWITCHER -------------- //
+
 @mixin dark-appearance {
   html, body  {
-      --bg: #181818;
-      --bg-secondary: #232323;
+      --bg: #232323;
+      --bg-secondary: #181818;
       --headings: #C32148;
       --text: #FEF5E6;
       --text-secondary: #EEDC83;
@@ -108,32 +113,37 @@ html[data-theme="light"] { @include light-appearance; }
 @media (prefers-color-scheme: dark) {
   body[data-theme="auto"] { @include dark-appearance; }
 }
+
 @media (prefers-color-scheme: light) {
   body[data-theme="auto"] { @include light-appearance; }
 }
   
-// -------------------------------------------- //
-
 html, body {
     background-color: var(--bg);
     color: var(--text);
 }
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--headings);
     font-family: "Raleway", -apple-system, "avenir next", avenir, roboto, noto, ubuntu, "helvetica neue", helvetica, sans-serif;
 }
+
 p, strong, b, em, small, li, hr, table, figcaption {
     color: var(--text);
 }
+
 .highlight, pre code, blockquote {
   border-radius: 0.5em;
 }
+
 blockquote {
   background-color: var(--bg-secondary);
 }
+
 a {
   color: var(--links);
 }
+
 *:target { background-color: var(--bg-secondary); }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -165,18 +175,21 @@ noscript .theme-toggle { display: none; }
   color: var(--links);
   outline: none;
 }
+
 .theme-toggle:focus {
   outline: none;
 }
+
 @media screen and (max-width: 600px) {
   .theme-toggle {
     margin: 0.5em;
   }
 }
-.dashed {
-  border-top: 1px var(--text) dashed;
-  margin: 0.5em 0;
+
+.horizontal-line {
+  border-top: 1px solid var(--border);
 }
+
 mark {
   padding: 0.4em;
   background-color: var(--highlight);
@@ -190,19 +203,24 @@ mark {
   font-size: 0.7em;
   font-family: "Fira Code", "JetBrains Mono", "Courier New", monospace;
 }
+
 .home-date {
   font-family: "Fira Code", "JetBrains Mono", "Courier New", monospace;
 }
+
 .post-list-item a {
   text-decoration: none;
 }
+
 .text-bold {
   font-weight: bold;
 }
+
 .text-upcase {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 p code, li code {
   background-color: var(--bg-secondary);
   padding: 0.2rem 0.4rem;
@@ -210,6 +228,7 @@ p code, li code {
   font-weight: bold;
   border-radius: 0.25em;
 }
+
 .code-copy {
   position: absolute;
   top: 0.5em;
@@ -225,12 +244,15 @@ p code, li code {
   opacity: 0;
   transition: opacity 0.2s ease;
 }
+
 div.highlighter-rouge:hover .code-copy {
   opacity: 1;
 }
+
 .code-copy:hover {
   color: var(--links);
 }
+
 @media screen and (max-width: 600px) {
   .code-copy {
     opacity: 1;
@@ -259,9 +281,11 @@ div.highlighter-rouge:hover .code-copy {
 .post-title {
   margin-bottom:-1.5rem;
 }
+
 .project-title {
   margin-bottom: 0.8rem;
 }
+
 .credits {
   font-size: 0.8em;
   color: var(--text);
@@ -276,7 +300,7 @@ div.highlighter-rouge:hover .code-copy {
     color: var(--links);
   }
 }
-// -------------- GITHUB MARKDOWN ALERTS -------------- //
+
 .markdown-alert {
   font-style: normal;
   padding: 0.5em 1em;
@@ -308,23 +332,26 @@ div.highlighter-rouge:hover .code-copy {
   border-left-color: var(--alert-note, #4493f8);
   .markdown-alert-title { color: var(--alert-note, #4493f8); }
 }
+
 .markdown-alert-tip {
   border-left-color: var(--alert-tip, #3fb950);
   .markdown-alert-title { color: var(--alert-tip, #3fb950); }
 }
+
 .markdown-alert-important {
   border-left-color: var(--alert-important, #a371f7);
   .markdown-alert-title { color: var(--alert-important, #a371f7); }
 }
+
 .markdown-alert-warning {
   border-left-color: var(--alert-warning, #d29922);
   .markdown-alert-title { color: var(--alert-warning, #d29922); }
 }
+
 .markdown-alert-caution {
   border-left-color: var(--alert-caution, #f85149);
   .markdown-alert-title { color: var(--alert-caution, #f85149); }
 }
-// ----------------------------------------------------- //
 
 .tag {
   font-family: "Fira Code", "JetBrains Mono", "Courier New", monospace;
@@ -343,7 +370,6 @@ div.highlighter-rouge:hover .code-copy {
   }
 }
 
-// -------------- POST NAVIGATION -------------- //
 .post-nav {
   display: flex;
   justify-content: space-between;
@@ -363,6 +389,27 @@ div.highlighter-rouge:hover .code-copy {
     text-align: right;
   }
 }
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: 1px solid var(--border);
+  font-size: 0.9em;
+
+  a {
+    color: var(--links);
+    text-decoration: none;
+    max-width: 45%;
+    &:hover { text-decoration: underline; }
+  }
+  .post-nav-next {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .post-nav {
     flex-direction: column;
@@ -371,9 +418,7 @@ div.highlighter-rouge:hover .code-copy {
     .post-nav-next { text-align: left; }
   }
 }
-// --------------------------------------------- //
 
-// -------------- TABLE OF CONTENTS -------------- //
 .toc {
   background-color: var(--bg-secondary);
   border-radius: 0.5em;
@@ -393,6 +438,7 @@ div.highlighter-rouge:hover .code-copy {
     margin: 0;
     padding-left: 1.5em;
   }
+
   li {
     margin: 0.3em 0;
   }
@@ -429,17 +475,12 @@ div.highlighter-rouge:hover .code-copy {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
 }
-// ------------------------------------------------ //
 
-// -------------- SELECTION COLOR -------------- //
 ::selection {
   background: var(--highlight);
   color: var(--headings);
 }
-// --------------------------------------------- //
 
-// -------------- DARK MODE SCROLLBAR -------------- //
 html[data-theme="dark"] {
   scrollbar-color: var(--bg-secondary) var(--bg);
 }
-// ------------------------------------------------- //

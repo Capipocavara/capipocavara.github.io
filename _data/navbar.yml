@@ -3,18 +3,14 @@ navbar_entries:
     icon: fa-solid fa-seedling
     url: /
 
-  - title: Projects
-    icon: fa-solid fa-swatchbook
-    url: projects
+  - title: Devlog
+    icon: fa-solid fa-code
+    url: devlog
 
   - title: Resources
     icon: fa-solid fa-box-archive
     url: resources
 
-  - title: Devlog
-    icon: fa-solid fa-code
-    url: blog
-
-  - title: Swag
+  - title: Wallpapers
     icon: fa-solid fa-panorama
-    url: swag
+    url: wallpapers

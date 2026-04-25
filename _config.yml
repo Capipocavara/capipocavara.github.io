@@ -1,3 +1,13 @@
+plugins:
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-feed
+
+whitelist:
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-feed
+  
 title: Capipocavara
 since: 2020
 author: Elscherino
@@ -5,7 +15,7 @@ author: Elscherino
 url: https://www.capipocavara.de
 baseurl: ""
 description: >-
-  Virtual Reality Development, Projects, Capybaras!
+  Virtual Reality Development, Unity, Capybaras!
 
 permalink: /:slug
 
@@ -13,20 +23,12 @@ theme_config:
   appearance: dark
   appearance_toggle: true
   date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: true # show blog description
-  show_navbar: true # show horizontal navbar
-  show_footer: true # show footer links in home page,add in _data/home.yml
-  show_copyright: true # show copyright notice in footer
+
   # following keys are using to create home layout
   show_projects: true # show projects as cards, add in _data/home.yml
   show_blog: true # show blog posts added in _posts
-  show_old_projects: true # show old projects as cards, add in _data/home.yml
-  show_misc_list: true # show generic vertical list for misc details, add _data/home.yml
   show_reading_time: true # show number of words and reading time in the blog posts
   show_tags: true # show tags in a blog posts
-  show_code_copy: true # show copy button on code blocks
-  show_progress_bar: true # show reading progress bar on posts
-  show_back_to_top: true # show back-to-top button
   show_post_nav: true # show prev/next links on posts
   show_toc: true # allow per-post table of contents via toc: true front matter
   # options for "home" page
@@ -34,10 +36,11 @@ theme_config:
     title_projects: Projects
     title_blog: Devlog
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
+sass:
+  style: :compressed
 
 # Markdown Processing
 kramdown:
@@ -49,16 +52,3 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
-sass:
-  style: :compressed
-
-plugins:
-  - jekyll-include-cache
-  - jekyll-sitemap
-  - jekyll-feed
-
-whitelist:
-  - jekyll-include-cache
-  - jekyll-sitemap
-  - jekyll-feed
