@@ -15,26 +15,14 @@ author: Elscherino
 url: https://www.capipocavara.de
 baseurl: ""
 description: >-
-  Virtual Reality Development, Unity, Capybaras!
+  Virtual Reality Development, Unity, C#/.NET, Capybaras!
 
 permalink: /:slug
 
 theme_config:
   appearance: dark
   appearance_toggle: true
-  date_format: "%Y-%m-%d" # customize how date is formatted
-
-  # following keys are using to create home layout
-  show_projects: true # show projects as cards, add in _data/home.yml
-  show_blog: true # show blog posts added in _posts
-  show_reading_time: true # show number of words and reading time in the blog posts
-  show_tags: true # show tags in a blog posts
-  show_post_nav: true # show prev/next links on posts
-  show_toc: true # allow per-post table of contents via toc: true front matter
-  # options for "home" page
-  home:
-    title_projects: Projects
-    title_blog: Devlog
+  date_format: "%Y-%m-%d"
 
 # Conversion
 markdown: kramdown
@@ -52,3 +40,6 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, _site, .jekyll-cache, CNAME, LICENSE]

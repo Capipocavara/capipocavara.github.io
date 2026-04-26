@@ -13,16 +13,24 @@
             <div class="horizontal-line"></div>
           </header>
         {% endif %}
+
+        {% if page.layout != "post" and page.toc %}
+          {% include toc.html %}
+        {% endif %}
+
         {{ content }}
+
         {% if page.layout != "post" %}
           <footer>
             <div class="horizontal-line"></div>
             {% include horizontal_list.html collection=site.data.footer.footer_entries %}
           </footer>
         {% endif %}
+
         {% if site.theme_config.appearance_toggle %}
           {% include toggle_theme_button.html %}
         {% endif %}
+        
         <div class="credits">
           &copy;&nbsp;{{ site.since }}&nbsp; - &nbsp;{{ "now" | date: "%Y" }}&nbsp;{{ site.author }}
           &nbsp;•&nbsp;
