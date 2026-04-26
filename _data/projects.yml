@@ -1,12 +1,12 @@
 project_entries:
   - title: Capybutler
     url: https://github.com/Capipocavara/Capybutler
-    desc: Extensionmethods, build tools, and other helpers for Unity
+    desc: Steam build tool, extensionmethods, scene management and other helpers for Unity
 
   - title: SLiquidVR
     url: https://github.com/Capipocavara/SLiquidVR
     desc: Simple VR liquid simulation for Unity
 
-  - title: SnapVR
-    url: https://github.com/Capipocavara/SnapVR
-    desc: Did you see that? VR ready gif recorder for Unity
+  - title: Flashback
+    url: https://github.com/Capipocavara/Flashback
+    desc: Flashback gif recorder for Unity
