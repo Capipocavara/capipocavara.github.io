@@ -3,10 +3,10 @@ project_entries:
     url: https://github.com/Capipocavara/Capybutler
     desc: Extensionmethods, build tools, and other helpers for Unity
 
-  - title: SLiquid-VR
-    url: https://github.com/Capipocavara/SLiquid-VR
+  - title: SLiquidVR
+    url: https://github.com/Capipocavara/SLiquidVR
     desc: Simple VR liquid simulation for Unity
 
-  - title: DYST-VR
-    url: https://github.com/Capipocavara/DYST-VR
+  - title: SnapVR
+    url: https://github.com/Capipocavara/SnapVR
     desc: Did you see that? VR ready gif recorder for Unity
