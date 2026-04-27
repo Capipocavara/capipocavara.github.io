@@ -3,9 +3,9 @@ project_entries:
     url: https://github.com/Capipocavara/Capybutler
     desc: Steam build tool, extensionmethods, scene management and other helpers for Unity
 
-  - title: SLiquidVR
-    url: https://github.com/Capipocavara/SLiquidVR
-    desc: Simple VR liquid simulation for Unity
+  - title: LiquidSpill
+    url: https://github.com/Capipocavara/LiquidSpill
+    desc: VR ready fluid simulation for Unity
 
   - title: Flashback
     url: https://github.com/Capipocavara/Flashback
