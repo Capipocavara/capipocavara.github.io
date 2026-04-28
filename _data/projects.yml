@@ -1,16 +1,16 @@
 project_entries:
-  - title: Capybutler
-    url: https://github.com/Capipocavara/Capybutler
+  - title: Capibutler
+    url: https://github.com/Capipocavara/Capibutler
     desc: Steam build tool, extensionmethods, scene management and other helpers for Unity
 
-  - title: Liquid Spill
-    url: https://github.com/Capipocavara/LiquidSpill
+  - title: Fluid Spill
+    url: https://github.com/Capipocavara/FluidSpill
     desc: VR ready fluid simulation for Unity
 
   - title: Flashback
     url: https://github.com/Capipocavara/Flashback
     desc: Flashback gif recorder for Unity
 
-  - title: Volatile Voodoo
-    url: https://github.com/Capipocavara/VolatileVoodoo
+  - title: VoodooVara
+    url: https://github.com/Capipocavara/VoodooVara
     desc: Scriptable Object Events & Values system for Unity
