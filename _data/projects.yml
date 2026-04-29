@@ -1,7 +1,7 @@
 project_entries:
   - title: Capibutler
     url: https://github.com/Capipocavara/Capibutler
-    desc: Steam build tool, extensionmethods, scene management and other helpers for Unity
+    desc: Steam build tool, extensionmethods, scene management, scriptable object events & values, and common helpers for Unity
 
   - title: Fluid Spill
     url: https://github.com/Capipocavara/FluidSpill
@@ -10,7 +10,3 @@ project_entries:
   - title: Flashback
     url: https://github.com/Capipocavara/Flashback
     desc: Flashback gif recorder for Unity
-
-  - title: VoodooVara
-    url: https://github.com/Capipocavara/VoodooVara
-    desc: Scriptable Object Events & Values system for Unity
